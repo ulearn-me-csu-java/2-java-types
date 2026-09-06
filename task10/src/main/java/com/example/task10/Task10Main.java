@@ -6,10 +6,10 @@ public class Task10Main {
         if (Float.isNaN(a) && Float.isNaN(b)) return true;
         if (Float.isNaN(a) || Float.isNaN(b)) return false;
 
-        if (Float.isInfinite(a) || Float.isInfinite(b)) return a==b;
-        
-        double epsilon = Math.pow(10,-precision);
-        return Math.abs(a-b)<epsilon;
+        if (Float.isInfinite(a) || Float.isInfinite(b)) return a == b;
+
+        double epsilon = Math.pow(10, -precision);
+        return Math.abs(a - b) < epsilon;
     }
 
     public static void main(String[] args) {

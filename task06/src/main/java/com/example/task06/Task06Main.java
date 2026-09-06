@@ -10,9 +10,9 @@ public class Task06Main {
         sum = Math.abs(sum);
 
         int count = 0;
-        while (sum>0){
+        while (sum > 0) {
             count++;
-            sum/=10;
+            sum /= 10;
         }
 
         return count;

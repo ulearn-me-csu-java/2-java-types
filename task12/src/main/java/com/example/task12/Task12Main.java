@@ -11,7 +11,7 @@ public class Task12Main {
         BigDecimal result = sum;
 
         for (int i = 1; i <= 12; i++) {
-            result = result.multiply(rate).setScale(9,RoundingMode.HALF_UP);
+            result = result.multiply(rate).setScale(9, RoundingMode.HALF_UP);
         }
         return result;
     }
