@@ -5,14 +5,11 @@ public class Task04Main {
     public static float calculate(int a, int b, String operation) {
         if (operation.equals("+")) {
             return a + b;
-        }
-        else if (operation.equals("-")) {
+        } else if (operation.equals("-")) {
             return a - b;
-        }
-        else if (operation.equals("*")) {
+        } else if (operation.equals("*")) {
             return a * b;
-        }
-        else return (float) a/b;
+        } else return (float) a / b;
     }
 
     public static void main(String[] args) {
