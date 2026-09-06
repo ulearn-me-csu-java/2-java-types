@@ -1,6 +1,7 @@
 package com.example.task12;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Task12Main {
 
@@ -10,14 +11,11 @@ public class Task12Main {
 
         // Считаем проценты за год
 
-        /*
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            BigDecimal interest = sum.multiply(percent);
+            sum = sum.add(interest).setScale(9, RoundingMode.HALF_UP);
         }
         return sum;
-        */
-
-        return BigDecimal.ZERO;
     }
 
     public static void main(String[] args) {

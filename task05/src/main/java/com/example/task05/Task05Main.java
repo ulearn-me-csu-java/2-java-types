@@ -4,9 +4,18 @@ public class Task05Main {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        if (x == 0) {
+            return "TRUE";
+        }
 
-        return "FALSE";
+        for (int n = x; n > 0; n /= 10) {
+            int digit = n % 10;
+
+            if (digit % 2 != 0) {
+                return "FALSE";
+            }
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
