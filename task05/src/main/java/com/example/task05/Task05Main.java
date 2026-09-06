@@ -4,9 +4,16 @@ public class Task05Main {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        boolean isEven = true;
+        while (x > 0) {
+            int ost = x % 10;
+            if (ost % 2 != 0) isEven = false;
+            x = x / 10;
+            if (!isEven) {
+                return "FALSE";
+            }
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
