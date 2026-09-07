@@ -4,18 +4,20 @@ public class Task02Main {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        long num = Long.parseLong(input);
 
-        return "";
+        if (Byte.MIN_VALUE <= num && num <= Byte.MAX_VALUE) {
+            return "byte";
+        } else if (Short.MIN_VALUE <= num && num <= Short.MAX_VALUE) {
+            return "short";
+        } else if (Integer.MIN_VALUE <= num && num <= Integer.MAX_VALUE) {
+            return "int";
+        } else return "long";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
+        String result = solution("99999999999999999");
         System.out.println(result);
-         */
     }
 
 }
