@@ -3,12 +3,12 @@ package com.example.task11;
 public class Task11Main {
 
     public static float benefit(float sum, float percent) {
-
-        // TODO исправьте функцию, чтобы избежать накопления ошибки
-
-        // Считаем проценты за год
-        for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+        float comp = 0.0f;
+        for (int i = 0; i < 12; i++) {
+            float delta = sum * percent - comp;
+            float t = sum + delta;
+            comp = (t - sum) - delta;
+            sum = t;
         }
         return sum;
     }
