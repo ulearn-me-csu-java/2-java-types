@@ -5,8 +5,13 @@ public class Task04Main {
     public static float calculate(int a, int b, String operation) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        return switch (operation) {
+            case "+" -> (float) (a + b);
+            case "-" -> (float) (a - b);
+            case "*" -> (float) (a * b);
+            case null, default -> (float) a / (float) b;
+        };
 
-        return 0;
     }
 
     public static void main(String[] args) {
