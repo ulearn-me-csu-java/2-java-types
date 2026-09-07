@@ -6,18 +6,17 @@ public class Task12Main {
 
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
 
-        // TODO раскомментируйте и исправьте код
+        BigDecimal one = BigDecimal.ONE;
 
-        // Считаем проценты за год
+        BigDecimal factor = one.add(percent);
 
-        /*
-        for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
-        }
-        return sum;
-        */
+        BigDecimal totalFactor = factor.pow(12);
 
-        return BigDecimal.ZERO;
+        BigDecimal result = sum.multiply(totalFactor);
+
+        result = result.setScale(9, BigDecimal.ROUND_HALF_UP);
+
+        return result;
     }
 
     public static void main(String[] args) {
