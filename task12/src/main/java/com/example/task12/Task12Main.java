@@ -2,6 +2,8 @@ package com.example.task12;
 
 import java.math.BigDecimal;
 
+import static java.math.BigDecimal.ROUND_HALF_UP;
+
 public class Task12Main {
 
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
@@ -10,20 +12,18 @@ public class Task12Main {
 
         // Считаем проценты за год
 
-        /*
+
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            BigDecimal mouthProfit = sum.multiply(percent).setScale(9, ROUND_HALF_UP);
+            sum = sum.add(mouthProfit).setScale(9, ROUND_HALF_UP);
         }
         return sum;
-        */
-
-        return BigDecimal.ZERO;
     }
 
     public static void main(String[] args) {
 
-        BigDecimal sum = new BigDecimal(500).setScale(9, BigDecimal.ROUND_HALF_UP); // 500 руб. на счете
-        BigDecimal percent = new BigDecimal(0.00000001f).setScale(9, BigDecimal.ROUND_HALF_UP); // 0.000001% ежемесячно
+        BigDecimal sum = new BigDecimal(500).setScale(9, ROUND_HALF_UP); // 500 руб. на счете
+        BigDecimal percent = new BigDecimal(0.00000001f).setScale(9, ROUND_HALF_UP); // 0.000001% ежемесячно
 
         sum = benefit(sum, percent);
 

@@ -1,12 +1,23 @@
 package com.example.task05;
 
+
 public class Task05Main {
 
     public static String solution(int x) {
+        x = Math.abs(x);
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        if (x == 0){
+            return "TRUE";
+        }
 
-        return "FALSE";
+        while (x > 0){
+            int digit = x % 10;
+            if (digit % 2 != 0){
+                return "FALSE";
+            }
+            x /= 10;
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
