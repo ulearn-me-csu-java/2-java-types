@@ -1,23 +1,21 @@
 package com.example.task12;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Task12Main {
 
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
 
-        // TODO раскомментируйте и исправьте код
+        int scale = 9;
 
-        // Считаем проценты за год
-
-        /*
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            BigDecimal monthlyInterest = sum.multiply(percent);
+            
+            sum = sum.add(monthlyInterest).setScale(scale, BigDecimal.ROUND_HALF_UP);
         }
-        return sum;
-        */
 
-        return BigDecimal.ZERO;
+        return sum;
     }
 
     public static void main(String[] args) {
