@@ -4,9 +4,11 @@ public class Task02Main {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "";
+        long number = Long.parseLong(input);
+        if (number <= Byte.MAX_VALUE && Byte.MIN_VALUE <= number) {return "byte";}
+        else if (number <= Short.MAX_VALUE && Short.MIN_VALUE <= number) {return "short";}
+        else if (number <= Integer.MAX_VALUE && Integer.MIN_VALUE <= number) {return "int";}
+        else return "long";
     }
 
     public static void main(String[] args) {

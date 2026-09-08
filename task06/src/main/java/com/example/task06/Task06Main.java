@@ -4,9 +4,10 @@ public class Task06Main {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int sum = Math.abs(x + y);
+        String su = Integer.toString(sum);
 
-        return 0;
+        return su.length();
     }
 
     public static void main(String[] args) {
