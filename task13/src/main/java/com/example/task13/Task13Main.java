@@ -4,7 +4,7 @@ public class Task13Main {
 
     public static char toUpperCase(char c) {
 
-        // TODO привести букву к верхнему регистру
+        c = (char) (c - 32);
 
         return c;
     }
