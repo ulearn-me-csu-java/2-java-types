@@ -4,9 +4,10 @@ public class Task07Main {
 
     public static int solution(int n, int m, int k) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int countN = n / k;
+        int countM = m / k;
 
-        return 0;
+        return  countM * countN;
     }
 
     public static void main(String[] args) {
