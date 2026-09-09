@@ -3,10 +3,12 @@ package com.example.task05;
 public class Task05Main {
 
     public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        String xString = Integer.toString(x);
+        if (xString.contains("1") || xString.contains("3") || xString.contains("5") || xString.contains("7") || xString.contains("9")){
+            return "FALSE";
+        } else {
+            return "TRUE";
+        }
     }
 
     public static void main(String[] args) {
