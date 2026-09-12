@@ -4,18 +4,15 @@ public class Task03Main {
 
     public static int getMetreFromCentimetre(int centimetre) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int answer = centimetre / 100;
 
-        return 0;
+        return answer;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
         int result = getMetreFromCentimetre(345);
         System.out.println(result);
-         */
+
     }
 
 }
