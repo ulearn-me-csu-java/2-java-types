@@ -4,18 +4,30 @@ public class Task02Main {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        // TODO напишите здесь свою корректную реализацию этого метода, вместо существующей
 
-        return "";
+        Long number = Long.parseLong(input); //возьмём наибольший тип и как по воронке будет проверять в какой наименьший тип войдёт число
+        String type = "long";
+
+        if (number <= Integer.MAX_VALUE && number >= Integer.MIN_VALUE){
+            type = "int";
+        }
+
+        if (number <= Short.MAX_VALUE && number >= Short.MIN_VALUE){
+            type = "short";
+        }
+
+        if (number <= Byte.MAX_VALUE && number >= Byte.MIN_VALUE){
+            type = "byte";
+        }
+
+        return type;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
+
+//        String result = solution("2500000000");
+//        System.out.println(result);
     }
 
 }
