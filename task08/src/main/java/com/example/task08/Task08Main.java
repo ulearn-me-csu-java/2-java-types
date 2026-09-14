@@ -5,7 +5,7 @@ public class Task08Main {
     public static boolean solution() {
         // TODO измените тип и значение переменной x, чтобы возвращалось значение true
 
-        int x = 100;
+        float x = Float.MAX_VALUE; // или еще можно использовать Float.POSITIVE_INFINITY
         return x == x + 1;
     }
 

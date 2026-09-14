@@ -8,16 +8,13 @@ public class Task12Main {
 
         // TODO раскомментируйте и исправьте код
 
-        // Считаем проценты за год
 
-        /*
         for (int i = 1; i <= 12; i++) {
-            sum += sum * percent;
+            BigDecimal persentPerMounth = sum.multiply(percent).setScale(9, BigDecimal.ROUND_HALF_UP);
+            sum = sum.add(persentPerMounth).setScale(9, BigDecimal.ROUND_HALF_UP);
         }
         return sum;
-        */
 
-        return BigDecimal.ZERO;
     }
 
     public static void main(String[] args) {
