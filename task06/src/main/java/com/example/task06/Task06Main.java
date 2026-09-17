@@ -6,7 +6,18 @@ public class Task06Main {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        int i = x + y;
+        int c = 0;
+        char[] s = String.valueOf(i).toCharArray();
+        for(char j : s)
+        {
+            c += 1;
+        }
+        if(i<0)
+        {
+            c-=1;
+        }
+        return c;
     }
 
     public static void main(String[] args) {

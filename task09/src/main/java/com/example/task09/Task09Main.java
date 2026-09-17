@@ -8,7 +8,7 @@ public class Task09Main {
         float a = 1.0f;
         float b = 3.0f;
         float c = 1.0e9f;
-        double x = (a / b - 1.0 / 3.0) * c;
+        double x = ((a - 1.0f) / b * c);
 
         return x;
     }
@@ -18,6 +18,7 @@ public class Task09Main {
         /*
         System.out.println(solution() == 0.0d);
         */
+        System.out.println(solution() == 0.0d);
     }
 
 }

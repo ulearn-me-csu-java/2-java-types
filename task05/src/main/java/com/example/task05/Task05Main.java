@@ -5,8 +5,16 @@ public class Task05Main {
     public static String solution(int x) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        boolean b = true;
+        char[] c = String.valueOf(x).toCharArray();
+        for(char i : c)
+        {
+            if(Character.getNumericValue(i) % 2 == 0) {
 
-        return "FALSE";
+            }
+            else {return "FALSE";}
+        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
