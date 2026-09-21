@@ -1,21 +1,25 @@
 package com.example.task06;
 
-public class Task06Main {
+public class Task06Main
+{
+    public static int solution(int x, int y)
+    {
+        long sum = (long) x + y;
+        long absSum = Math.abs(sum);
 
-    public static int solution(int x, int y) {
+        int count = 1;
+        while (absSum >= 10)
+        {
+            absSum /= 10;
+            count++;
+        }
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        return count;
     }
 
-    public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
+    public static void main(String[] args)
+    {
         int result = solution(12, 34);
         System.out.println(result);
-        */
     }
-
 }
