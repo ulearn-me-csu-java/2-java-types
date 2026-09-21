@@ -1,23 +1,15 @@
 package com.example.task14;
 
-public class Task14Main {
-
-
-    public static int reverse(int value) {
-
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+public class Task14Main
+{
+    public static int reverse(int value)
+    {
+        return Integer.parseInt(new StringBuilder(String.valueOf(value)).reverse().toString());
     }
 
-    public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
+    public static void main(String[] args)
+    {
         int result = reverse(345);
         System.out.println(result);
-         */
     }
-
-
 }
