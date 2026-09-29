@@ -2,20 +2,26 @@ package com.example.task06;
 
 public class Task06Main {
 
-    public static int solution(int x, int y) {
+    public static int solution(int a, int b) {
+        long sum = Math.abs((long) a + b);
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        if (sum == 0) {
+            return 1;
+        }
 
-        return 0;
+        int digitCount = 0;
+        while (sum > 0) {
+            digitCount++;
+            sum /= 10;
+        }
+
+        return digitCount;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int result = solution(12, 34);
-        System.out.println(result);
-        */
+        // Здесь вы можете вручную протестировать ваше решение
+
+        System.out.println(solution(625, 5324)); // 4
     }
 
 }
