@@ -3,9 +3,7 @@ package com.example.task08;
 public class Task08Main {
 
     public static boolean solution() {
-        // TODO измените тип и значение переменной x, чтобы возвращалось значение true
-
-        int x = 100;
+        float x = 16777216.0f;
         return x == x + 1;
     }
 
