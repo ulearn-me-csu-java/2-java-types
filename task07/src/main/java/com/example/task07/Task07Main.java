@@ -3,11 +3,9 @@ package com.example.task07;
 public class Task07Main {
 
     public static int solution(int n, int m, int k) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
-    }
+    // Считаем, сколько палаток поместится по длине и по ширине, затем перемножаем
+    return (n / k) * (m / k);
+}
 
     public static void main(String[] args) {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат

@@ -3,11 +3,14 @@ package com.example.task04;
 public class Task04Main {
 
     public static float calculate(int a, int b, String operation) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+    switch (operation) {
+        case "+": return (float) (a + b);
+        case "-": return (float) (a - b);
+        case "*": return (float) (a * b);
+        case "/": return (float) a / b; // Приводим к float для дробного деления
+        default: throw new IllegalArgumentException("Неизвестная операция: " + operation);
     }
+}
 
     public static void main(String[] args) {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат

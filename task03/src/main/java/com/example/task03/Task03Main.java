@@ -3,11 +3,8 @@ package com.example.task03;
 public class Task03Main {
 
     public static int getMetreFromCentimetre(int centimetre) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
-    }
+    return centimetre / 100; // Целочисленное деление отбрасывает остаток
+}
 
     public static void main(String[] args) {
         // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
