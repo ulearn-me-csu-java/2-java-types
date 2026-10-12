@@ -4,7 +4,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
-public class Task01MainTest {
+public class    Task01MainTest {
 
     @Test
     public void solution() throws Exception {
