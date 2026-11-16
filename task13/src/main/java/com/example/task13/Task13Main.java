@@ -5,8 +5,7 @@ public class Task13Main {
     public static char toUpperCase(char c) {
 
         // TODO привести букву к верхнему регистру
-
-        return c;
+        return c-=32;
     }
 
     public static void main(String[] args) {
