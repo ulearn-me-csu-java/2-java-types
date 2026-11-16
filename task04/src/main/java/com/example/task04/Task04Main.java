@@ -3,10 +3,14 @@ package com.example.task04;
 public class Task04Main {
 
     public static float calculate(int a, int b, String operation) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        
+        return switch (operation) {
+            case "+" -> (float) a + b;
+            case "-" -> (float) a - b;
+            case "*" -> (float) a * b;
+            case "/" -> (float) a / b;
+            default -> throw new IllegalArgumentException();
+        };
     }
 
     public static void main(String[] args) {
